@@ -129,6 +129,15 @@ button {
 .main {
   background-color: #f8f8f8;
 }
+.main-menu__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.7rem;
+  width: 1.7rem;
+  background-color: #ff3e79;
+  border-radius: 50%;
+}
 .main__title {
   font-family: "TT Lakes Bold";
   font-size: 28px;
@@ -235,8 +244,8 @@ button {
   display: flex;
   align-items: center;
 }
-.button__arrow {
-  margin-left: 8px;
+.button__item::before {
+  content: url("../img/arrow.svg");
 }
 .button__text {
   margin-left: 16px;
