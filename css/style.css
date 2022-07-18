@@ -210,7 +210,7 @@ button {
   flex-direction: column;
   flex-wrap: wrap;
 }
-.information__description--text {
+.information__description {
   font-family: "TT Lakes";
   color: #1b1c21;
   font-size: 14px;
@@ -219,7 +219,7 @@ button {
   letter-spacing: 0.2px;
   margin: 24px 16px 0px 16px;
   width: 288px;
-  height: 90px;
+  height: 110px;
   overflow: hidden;
 }
 .info__button {
@@ -240,6 +240,10 @@ button {
 }
 .button__text {
   margin-left: 16px;
+}
+.info__image {
+  margin: 16px 0px 35px 0px;
+  width: 100%;
 }
 @media screen and (min-width: 1120px) {
   .container {
@@ -327,11 +331,12 @@ button {
   }
 }
 @media screen and (min-width: 768px) {
-  .information__description--text {
+  .information__description {
     width: 312px;
-    height: 160px;
+    height: 170px;
     line-height: 20px;
     margin: 32px 0px 0px 24px;
+    text-overflow: clip;
   }
   .info__container {
     flex-direction: row;
@@ -339,11 +344,12 @@ button {
   }
 }
 @media screen and (min-width: 1120px) {
-  .information__description--text {
+  .information__description {
     width: 490px;
-    max-height: 160px;
+    max-height: 170px;
     line-height: 20px;
     margin: 19px 0px 0px 34px;
+    text-overflow: clip;
   }
 }
 @media screen and (min-width: 768px) {
@@ -355,10 +361,6 @@ button {
   .info__button {
     margin: 13px 0px 0px 40px;
   }
-}
-.info__image {
-  margin: 16px 0px 35px 0px;
-  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .info__image {
