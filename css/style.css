@@ -155,7 +155,7 @@ span {
 }
 .main__container {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
   padding-top: 24px;
 }
 .main__container::before {
@@ -169,8 +169,8 @@ span {
 }
 .main__title-list {
   display: flex;
-  margin-left: auto;
-  margin-right: 24px;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .title-list {
   display: flex;
@@ -182,11 +182,15 @@ span {
   gap: 0 9px;
 }
 .slideMenu__nav {
-  overflow-y: scroll;
-  -ms-overflow-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
   scrollbar-width: none;
-  margin-top: 24px;
-  margin-left: 16px;
+  padding-left: 16px;
+  -ms-overflow-style: none;
 }
 .slideMenu__nav::-webkit-scrollbar {
   display: none;
